@@ -1,3 +1,11 @@
+/* Annova Software
+
+File:Dashboard.js
+
+Contents: categorylist ve product list yapısı hazırlandı
+
+History: 11.03.2021 FatihK
+*/ 
 import React, { Component } from 'react';
 import {Row,Col} from "reactstrap";
 import CategoryList from "../categories/CategoryList";

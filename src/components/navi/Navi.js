@@ -14,6 +14,14 @@ import {
   NavbarText
 } from 'reactstrap';
 
+/* Annova Software
+
+File:Navi.js
+
+Contents: navbar mimarisi yazıldı
+
+History: 11.03.2021 FatihK
+*/ 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +33,7 @@ const Navi = (props) => {
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="ml-auto" navbar>{/* ml-auto ile sağa yaslanıyor me-auto ile ise sola yaslanıyor */}
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>
